@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #F2F2F2;
+    justify-content: center;
+    align-items: center;
+}
+
+.hook {
+    height: 2px;
+}
+
+.box {
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    box-shadow: 0px 15px 20px rgba(0, 140, 140, 0.247);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 43px;
+}
+
+.nav-bar {
+    width: 100vw;
+    height: 130px;
+    display: flex;
+    position: sticky;
+    top: 0;
+    background-color: #FFFFFF;
+}
+
+menu ul {
+    list-style: none;
+    display: flex;
+}
+
+menu ul li a {
+    text-decoration: none;
+    color: #4F4F4F;
+    font-size: 18px;
+}
+
+svg {
+    fill: #4F4F4F;
+    width: 24px;
+}
+
+.perfil {
+    display: flex;
+}
+
+#selfie {
+    border-radius: 12px;
+}
+
+.name-contact {
+    display: flex;
+}
+
+.name-function {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+
+.name {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29.26px;
+    color: #4F4F4F;
+    margin-bottom: 3px;
+    margin-top: 0px;
+    width: 250px;
+}
+
+.function {
+    list-style: none;
+    color: #828282;
+    margin-top: 3px;
+    padding: 0px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+}
+
+.contact svg {
+    padding-right: 10px;
+}
+
+.contact p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #4F4F4F;
+    margin-top: 9px;
+    margin-bottom: 9px;
+}
+
+.resume {
+    color: #828282;
+}
+
+.hobbies-box h2 {
+    color: #4F4F4F;
+    padding: 25px;
+    margin: 0px;
+    align-self: flex-start;
+}
+
+h3 {
+    color: #333333;
+}
+
+.hobbies-box p {
+    color: #828282;
+    font-size: 16px;
+}
+
+.reference {
+    text-decoration: none;
+    color: #828282;
+    font-size: 10px;
+    align-self: flex-end;
+    margin-right: 5px;
+}
+
+.projetos{ 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.hashtag {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    color: #4F4F4F;
+    flex-wrap: wrap;
+    margin-top: 24px;
+}
+
+.hashtag p {
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.title {
+    margin-left: 22px;
+    color: #333333;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+}
+
+.project h2 {
+    color: #333333;
+}
+
+.project p {
+    color: #828282;
+}
+
+button {
+    width: 135px;
+    height: 46px;
+    border-radius: 12px;
+    font-family: 'Montserrat';
+    font-size: 18px;
+}
+
+.demo {
+    margin-left: 18px;
+    background-color: #008c8c;
+    border: solid 2px #FFFFFF;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.demo:hover{
+    background-color: #FFFFFF;
+    color: #008c8c;
+    border: solid 2px #008c8c;
+}
+
+.repo-card {
+    align-self: center;
+    width: 90%;
+    margin-bottom: 18px;
+    margin-top: 18px;
+}
