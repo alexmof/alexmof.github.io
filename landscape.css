@@ -104,3 +104,8 @@ menu ul {
 .project p {
     padding-left: 18px;
 }
+
+.project-pic img {
+    border-radius: 12px;
+    margin-top: 22px;
+}
