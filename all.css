@@ -192,3 +192,14 @@ button {
     margin-bottom: 18px;
     margin-top: 18px;
 }
+
+.project-pic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-pic img {
+    border-radius: 12px;
+    margin-top: 22px;
+}
