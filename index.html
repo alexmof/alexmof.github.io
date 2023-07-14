@@ -1,25 +1,34 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="all.css" media="all">
     <link rel="stylesheet" href="landscape.css" media="screen and (orientation: landscape)">
-    <link rel="stylesheet" href="portrait.css" media="screen and (orientation: portrait)">
+    <link rel="stylesheet" href="portrait.css" media="(max-width: 772px), screen and (orientation: portrait)">
     <link rel="shortcut icon" href="assets/icone.png" type="image/png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+        integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
     <title>Álex Fidelis</title>
 </head>
 <script src="https://tarptaeya.github.io/repo-card/repo-card.js"></script>
+
 <body>
-    <div class="nav-bar">
+
+    <a href="https://wa.me/5583988593387" class="float" target="_blank"><i class="fab fa-whatsapp my-float"></i></a>
+
+    <a href="https://github.com/alexmof" id="git" class="float" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 496 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg></a>
+
+    <div class="nav-bar" id="navBar">
         <a href="https://github.com/alexmof">
             <picture>
-                <source media="(max-width: 1000px)" srcset="assets/Logo50.png">
+                <source media="(max-width: 896px)" srcset="assets/Logo50.png">
                 <img src="assets/Logo.png" alt="">
             </picture>
         </a>
-        <menu>
+        <menu id="menu">
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#hobbies">Hobbies</a></li>
@@ -27,6 +36,15 @@
                 <li><a href="#projects">Projects</a></li>
             </ul>
         </menu>
+        <svg id="sand-menu" onclick="clickMenu()" xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960"
+            width="48">
+            <path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z" />
+        </svg>
+        <svg id="close" onclick="clickExit()" xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960"
+            width="48">
+            <path
+                d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z" />
+        </svg>
     </div>
     <div id="home" class="hook"></div>
     <div class="perfil box">
@@ -42,16 +60,25 @@
                 </div>
                 <div class="contacts">
                     <div class="contact email">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 48 48"><path d="M7 40q-1.2 0-2.1-.9Q4 38.2 4 37V11q0-1.2.9-2.1Q5.8 8 7 8h34q1.2 0 2.1.9.9.9.9 2.1v26q0 1.2-.9 2.1-.9.9-2.1.9Zm17-15.1 17-11.15V11L24 21.9 7 11v2.75Z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 48 48">
+                            <path
+                                d="M7 40q-1.2 0-2.1-.9Q4 38.2 4 37V11q0-1.2.9-2.1Q5.8 8 7 8h34q1.2 0 2.1.9.9.9.9 2.1v26q0 1.2-.9 2.1-.9.9-2.1.9Zm17-15.1 17-11.15V11L24 21.9 7 11v2.75Z" />
+                        </svg>
                         <p>alex.fidelis@ccc.ufcg.edu.br</p>
                     </div>
                     <div class="contact tel">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 48 48"><path d="M39.75 42q-6.1 0-12.125-3T16.8 31.2Q12 26.4 9 20.375 6 14.35 6 8.25q0-.95.65-1.6Q7.3 6 8.25 6h7q.7 0 1.225.475.525.475.675 1.275l1.35 6.3q.1.7-.025 1.275t-.525.975l-5 5.05q2.8 4.65 6.275 8.1Q22.7 32.9 27.1 35.3l4.75-4.9q.5-.55 1.15-.775.65-.225 1.3-.075l5.95 1.3q.75.15 1.25.75T42 33v6.75q0 .95-.65 1.6-.65.65-1.6.65Z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 48 48">
+                            <path
+                                d="M39.75 42q-6.1 0-12.125-3T16.8 31.2Q12 26.4 9 20.375 6 14.35 6 8.25q0-.95.65-1.6Q7.3 6 8.25 6h7q.7 0 1.225.475.525.475.675 1.275l1.35 6.3q.1.7-.025 1.275t-.525.975l-5 5.05q2.8 4.65 6.275 8.1Q22.7 32.9 27.1 35.3l4.75-4.9q.5-.55 1.15-.775.65-.225 1.3-.075l5.95 1.3q.75.15 1.25.75T42 33v6.75q0 .95-.65 1.6-.65.65-1.6.65Z" />
+                        </svg>
                         <p>(+55) 83 9 8859-3387</p>
                     </div>
                 </div>
             </div>
-            <p class="resume">Graduanda em Ciência da Computação pela UFCG, busco oportunidades na área de desenvolvimento web, com foco em front-end e back-end com Java e Spring Boot. Eu tenho uma paixão por criar soluções criativas e funcionais para os problemas dos usuários, e estou constantemente buscando aprender novas tecnologias e técnicas para aprimorar minhas habilidades.</p>
+            <p class="resume">Graduanda em Ciência da Computação pela UFCG, busco oportunidades na área de
+                desenvolvimento web, com foco em front-end e back-end com Java e Spring Boot. Eu tenho uma paixão por
+                criar soluções criativas e funcionais para os problemas dos usuários, e estou constantemente buscando
+                aprender novas tecnologias e técnicas para aprimorar minhas habilidades.</p>
         </div>
     </div>
     <div id="hobbies" class="hook"></div>
@@ -63,21 +90,27 @@
                     <img src="assets/readG.png" alt="">
                 </picture>
                 <h3>Leitura</h3>
-                <p>Um dos meus passatempos favoritos é mergulhar em livros de ficção científica, histórias épicas e fantasia. Adoro me perder em outros mundos, explorando novas ideias e imaginando o impossível.</p>
+                <p>Um dos meus passatempos favoritos é mergulhar em livros de ficção científica, histórias épicas e
+                    fantasia. Adoro me perder em outros mundos, explorando novas ideias e imaginando o impossível.</p>
             </div>
             <div class="hobbie">
                 <picture>
                     <img src="assets/puzzleG.png" alt="">
                 </picture>
                 <h3>Jogos</h3>
-                <p> Gosto de explorar novos mundos virtuais, experimentar novas mecânicas de jogabilidade e me desafiar. Montar quebra-cabeças me ajuda a desenvolver minha mente e aprimorar minhas habilidades de resolução de problemas Além de serem uma forma divertida de passar o tempo livre, os jogos também me ajudam a desenvolver trabalho em equipe e liderança, que são valiosas em minha carreira profissional.</p>
+                <p> Gosto de explorar novos mundos virtuais, experimentar novas mecânicas de jogabilidade e me desafiar.
+                    Montar quebra-cabeças me ajuda a desenvolver minha mente e aprimorar minhas habilidades de resolução
+                    de problemas Além de serem uma forma divertida de passar o tempo livre, os jogos também me ajudam a
+                    desenvolver trabalho em equipe e liderança, que são valiosas em minha carreira profissional.</p>
             </div>
             <div class="hobbie">
                 <picture>
                     <img src="assets/travelG.png" alt="">
                 </picture>
                 <h3>Viagem</h3>
-                <p>Gosto de explorar novos lugares, conhecer pessoas de diferentes origens e experimentar novos sabores e culturas. Viajar me permite expandir minha visão de mundo, descobrir novas perspectivas e enriquecer minha vida pessoal e profissional.</p>
+                <p>Gosto de explorar novos lugares, conhecer pessoas de diferentes origens e experimentar novos sabores
+                    e culturas. Viajar me permite expandir minha visão de mundo, descobrir novas perspectivas e
+                    enriquecer minha vida pessoal e profissional.</p>
             </div>
         </div>
         <a class="reference" href="https://storyset.com/education">illustrations by Storyset</a>
@@ -127,10 +160,15 @@
                 <p>#CSS</p>
                 <p>#responsive</p>
             </div>
-            <h2>Recipe Page</h2>
-            <p>
-                Uma página de receita construída a partir de um layout no Figma e desenvolvida com HTML e CSS puros totalmente responsiva. A página apresenta uma lista de ingredientes com caixas de seleção personalizadas. Uma caixa de informações da receita também é exibida ao lado do conteúdo da receita, acompanhando o scroll do mouse.
-            </p>
+            <div class="name-desc">
+                <h2>Recipe Page</h2>
+                <p>
+                    Uma página de receita construída a partir de um layout no Figma e desenvolvida com HTML e CSS puros
+                    totalmente responsiva. A página apresenta uma lista de ingredientes com caixas de seleção
+                    personalizadas. Uma caixa de informações da receita também é exibida ao lado do conteúdo da receita,
+                    acompanhando o scroll do mouse.
+                </p>
+            </div>
             <div class="buttons">
                 <button class="demo" onclick="window.open('https://recipe-page-alexmof.netlify.app/')">Demo</button>
             </div>
@@ -145,12 +183,19 @@
                 <p>#CSS</p>
                 <p>#responsive</p>
             </div>
-            <h2>Interiror Consultant</h2>
-            <p>
-                Esta página foi desenvolvida com HTML, CSS e JavaScript puros a partir de um design produzido no Figma, e é totalmente responsiva, apresentando um menu sanduíche elegante que é exibido quando a página é acessada a partir de uma tela menor. Além disso, há um efeito hover suave e agradável nos botões do menu, o que adiciona uma interação amigável com o usuário.
-            </p>
+            <div class="name-desc">
+                <h2>Interiror Consultant</h2>
+                <p>
+                    Esta página foi desenvolvida com HTML, CSS e JavaScript puros a partir de um design produzido no
+                    Figma,
+                    e é totalmente responsiva, apresentando um menu sanduíche elegante que é exibido quando a página é
+                    acessada a partir de uma tela menor. Além disso, há um efeito hover suave e agradável nos botões do
+                    menu, o que adiciona uma interação amigável com o usuário.
+                </p>
+            </div>
             <div class="buttons">
-                <button class="demo" onclick="window.open('https://interior-consultant-alexmof.netlify.app/')">Demo</button>
+                <button class="demo"
+                    onclick="window.open('https://interior-consultant-alexmof.netlify.app/')">Demo</button>
             </div>
             <div class="repo-card" data-repo="alexmof/Interior-Consultant---DevChallenges.io"></div>
         </div>
@@ -163,14 +208,22 @@
                 <p>#CSS</p>
                 <p>#responsive</p>
             </div>
-            <h2>Team Page</h2>
-            <p>
-                Responsiva e construída com o uso de grid do CSS a partir de um design produzido no Figma, esta página brinca com a posição das imagens dos membros, posicionando-as de forma desalinhada para criar um design mais dinâmico e moderno. Além disso, adicionei textos na vertical para complementar o design, tornando a página mais interessante visualmente.
-            </p>
+            <div class="name-desc">
+                <h2>Team Page</h2>
+                <p>
+                    Responsiva e construída com o uso de grid do CSS a partir de um design produzido no Figma, esta
+                    página
+                    brinca com a posição das imagens dos membros, posicionando-as de forma desalinhada para criar um
+                    design
+                    mais dinâmico e moderno. Além disso, adicionei textos na vertical para complementar o design,
+                    tornando a
+                    página mais interessante visualmente.
+                </p>
+            </div>
             <div class="buttons">
                 <button class="demo" onclick="window.open('https://team-page-alexmof.netlify.app/')">Demo</button>
             </div>
-            <div class="repo-card" data-repo="alexmof/Team-Page---DevChallenges.io"></div> 
+            <div class="repo-card" data-repo="alexmof/Team-Page---DevChallenges.io"></div>
         </div>
         <div class="box project">
             <picture class="project-pic">
@@ -182,14 +235,19 @@
                 <p>#responsive</p>
                 <p>#JavaScript</p>
             </div>
-            <h2>Checkout Page</h2>
-            <p>
-                Esta página é baseada em um projeto Figma, e foi construída com HTML, CSS e JavaScript. É possível visualizar uma mensagem de aviso caso a validação falhe. Além disso, é possível inserir o número de itens desejados, e o preço final do produto é calculado automaticamente. O frete também é calculado automaticamente com base no endereço de entrega fornecido.
-            </p>
+            <div class="name-desc">
+                <h2>Checkout Page</h2>
+                <p>
+                    Esta página é baseada em um projeto Figma, e foi construída com HTML, CSS e JavaScript. É possível
+                    visualizar uma mensagem de aviso caso a validação falhe. Além disso, é possível inserir o número de
+                    itens desejados, e o preço final do produto é calculado automaticamente. O frete também é calculado
+                    automaticamente com base no endereço de entrega fornecido.
+                </p>
+            </div>
             <div class="buttons">
                 <button class="demo" onclick="window.open('https://checkout-page-alexmof.netlify.app/')">Demo</button>
             </div>
-            <div class="repo-card" data-repo="alexmof/Checkout-Page---DevChallenges.io"></div> 
+            <div class="repo-card" data-repo="alexmof/Checkout-Page---DevChallenges.io"></div>
         </div>
         <div class="box project">
             <picture class="project-pic">
@@ -200,15 +258,327 @@
                 <p>#CSS</p>
                 <p>#responsive</p>
             </div>
-            <h2>My Gallery</h2>
-            <p>
-                Esta página responsiva, foi baseada em um projeto Figma e construída com HTML e CSS puros. apresenta uma composição harmônica das fotografias apesar dos tamanhos diferentes.
-            </p>
+            <div class="name-desc">
+                <h2>My Gallery</h2>
+                <p>
+                    Esta página responsiva, foi baseada em um projeto Figma e construída com HTML e CSS puros. apresenta
+                    uma
+                    composição harmônica das fotografias apesar dos tamanhos diferentes.
+                </p>
+            </div>
             <div class="buttons">
                 <button class="demo" onclick="window.open('https://my-gallery-alexmof.netlify.app/')">Demo</button>
             </div>
-            <div class="repo-card" data-repo="alexmof/My-Gallery---DevChallenges.io"></div> 
+            <div class="repo-card" data-repo="alexmof/My-Gallery---DevChallenges.io"></div>
+        </div>
+        <div class="box project">
+            <div class="galeria project-pic">
+                <button id="prev" onclick="prevSlide()">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48">
+                        <path
+                            d="M560.615-253.847 333.847-480.615l226.768-227.153 32.615 32.614-194.154 194.539L593.23-286.462l-32.615 32.615Z" />
+                    </svg>
+                </button>
+                <div class="slider">
+                    <div class="slides">
+                        <div class="slide">
+                            <div class="content">
+                                <img src="https://cdn.greatsoftwares.com.br/arquivos/paginas_editor/29895-835b039144c4b9982068fc256b171374.jpg"
+                                    onclick="opLightbox(this, 0)" alt="">
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="content">
+                                <img src="https://cdn.greatsoftwares.com.br/arquivos/paginas_editor/29895-27290a45706c8a1eedc688b8ea8a9f80.jpg"
+                                    onclick="opLightbox(this, 1)" alt="">
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="content">
+                                <img src="https://cdn.greatsoftwares.com.br/arquivos/paginas_editor/29895-63645f3996c3ca02e17024c04eeef5d5.jpg"
+                                    onclick="opLightbox(this, 2)" alt="">
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="content">
+                                <img src="https://cdn.greatsoftwares.com.br/arquivos/paginas_editor/29895-d163d65a6167a4628a3ae757a88292e5.jpg"
+                                    onclick="opLightbox(this, 3)" alt="">
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="content">
+                                <img src="https://cdn.greatsoftwares.com.br/arquivos/paginas_editor/29895-111a34146c6205699051f614ae6eab33.jpg"
+                                    onclick="opLightbox(this, 4)" alt="">
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="content">
+                                <img src="https://cdn.greatsoftwares.com.br/arquivos/paginas_editor/29895-cb7e7e72e14b8728c873236e5198f2f9.jpg"
+                                    onclick="opLightbox(this, 5)" alt="">
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="content">
+                                <img src="https://cdn.greatsoftwares.com.br/arquivos/paginas_editor/29895-29369af8d2b814c0d78005409a304f4b.jpg"
+                                    onclick="opLightbox(this, 6)" alt="">
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="content">
+                                <img src="https://cdn.greatsoftwares.com.br/arquivos/paginas_editor/29895-0606e450307580e538cefd6864912c7b.jpg"
+                                    onclick="opLightbox(this, 7)" alt="">
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="content">
+                                <img src="https://cdn.greatsoftwares.com.br/arquivos/paginas_editor/29895-94f20b29da0b390343a8de08a5e798f2.jpg"
+                                    onclick="opLightbox(this, 8)" alt="">
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="content">
+                                <img src="https://cdn.greatsoftwares.com.br/arquivos/paginas_editor/29895-99e62ecea8965edfcee9613388a2860f.jpg"
+                                    onclick="opLightbox(this, 9)" alt="">
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="content">
+                                <img src="https://cdn.greatsoftwares.com.br/arquivos/paginas_editor/29895-099488d02995e0ca92b24c982f1fdaff.jpg"
+                                    onclick="opLightbox(this, 10)" alt="">
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="content">
+                                <img src="https://cdn.greatsoftwares.com.br/arquivos/paginas_editor/29895-1f3b24626849d11b38b9934c03630ab6.jpg"
+                                    onclick="opLightbox(this, 11)" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button id="next" onclick="nextSlide()">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48">
+                        <path
+                            d="M536.924-480.615 342.77-675.154l32.615-32.614 226.768 227.153-226.768 226.768-32.615-32.615 194.154-194.153Z" />
+                    </svg>
+                </button>
+            </div>
+
+            <div id="lightbox">
+                <button id="prevLightbox" onclick="prevLightbox()">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48">
+                        <path
+                            d="M560.615-253.847 333.847-480.615l226.768-227.153 32.615 32.614-194.154 194.539L593.23-286.462l-32.615 32.615Z" />
+                    </svg>
+                </button>
+                <img id="lightboxImage" src="" alt="">
+                <button id="nextLightbox" onclick="nextLightbox()">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48">
+                        <path
+                            d="M536.924-480.615 342.77-675.154l32.615-32.614 226.768 227.153-226.768 226.768-32.615-32.615 194.154-194.153Z" />
+                    </svg>
+                </button>
+                <button style="position: absolute; top: 30px; right: 50px;" onclick="closeLightbox()">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48">
+                        <path
+                            d="m252.846-230.846-22-22L458-480 230.846-707.154l22-22L480-502l227.154-227.154 22 22L502-480l227.154 227.154-22 22L480-458 252.846-230.846Z" />
+                    </svg>
+                </button>
+            </div>
+
+            <div class="overlay"></div>
+
+
+            <div class="hashtag">
+                <p>#HTML</p>
+                <p>#CSS</p>
+                <p>#JavaScript</p>
+                <p>#DOM</p>
+                <p>#responsive</p>
+            </div>
+            <div class="name-desc">
+                <h2>Sliding Gallery With Lightbox</h2>
+                <p>
+                    Uma galeria deslizante responsiva, aprimorada com um carrossel de imagens que reproduz
+                    automaticamente,
+                    além de possuir um recurso de lightbox com uma animação de zoom.
+                </p>
+            </div>
+            <div class="buttons">
+                <button class="demo" onclick="window.open('https://sliding-gallery-alexmof.netlify.app/')">Demo</button>
+            </div>
+            <div class="repo-card" data-repo="alexmof/Sliding-gallery"></div>
         </div>
     </div>
+
+
 </body>
+<script>
+    function clickMenu() {
+        alert("oi")
+        close.style.display = "block"
+        navBar.style.left = "100%"
+    }
+
+    function clickExit() {
+        close.style.display = "none"
+        navBar.style.left = "100%"
+    }
+</script>
+
+<script>
+    const imgsList = document.querySelectorAll('.content img');
+    var current = -1;
+
+    function prevLightbox() {
+        var lightbox = document.getElementById('lightbox');
+        var lightboxImage = document.getElementById('lightboxImage');
+
+        if (current > 0) {
+            current = current - 1;
+        }
+
+        lightboxImage.src = imgsList[current].src;
+    }
+
+    function nextLightbox() {
+        var lightbox = document.getElementById('lightbox');
+        var lightboxImage = document.getElementById('lightboxImage');
+
+        if (current < 11) {
+            current = current + 1;
+        }
+
+        lightboxImage.src = imgsList[current].src;
+    }
+
+    function opLightbox(image, index) {
+
+
+        current = index;
+
+        document.body.style.setProperty('--height', `${(image.getBoundingClientRect().height)}px`);
+
+        var lightbox = document.getElementById('lightbox');
+        var lightboxImage = document.getElementById('lightboxImage');
+        var animacao = document.querySelector('#imgAnimacao');
+        lightbox.style.display = 'flex';
+
+        lightboxImage.src = image.src;
+
+        var leftInicial = Math.trunc(image.getBoundingClientRect().left) + 151;
+        var topInicial = Math.trunc(image.getBoundingClientRect().top) + 100;
+
+        var offsetPath = `M${leftInicial} ${topInicial}L${window.innerWidth / 2} ${window.innerHeight / 2}`;
+
+        document.body.style.setProperty('--offset-path', offsetPath.toString());
+
+        const overlay = document.querySelector('.overlay');
+
+        var im = image.cloneNode();
+        overlay.appendChild(im);
+        im.style.offset = `path("${offsetPath}") 0deg`;
+        overlay.style.display = 'block';
+
+        const slide = image.parentElement.parentElement;
+        slide.style.overflow = 'visible';
+
+        setTimeout(function () {
+            lightbox.style.opacity = '1';
+        }, 1500);
+
+        if (image.width > image.height) {                 // imagem em paisasem
+            if (window.innerWidth < window.innerHeight) { // tela em retrato
+                //alert('P-R');
+                im.classList.add('zoom-w');
+            } else {                                      // tela em paisagem
+                //alert('P-P');
+                im.classList.add('zoom-h');
+            }
+        } else {                                          // imagem em retrato
+            if (window.innerWidth < window.innerHeight) { // tela em retrato
+                //alert('R-R');
+                im.classList.add('zoom-w');
+            } else {                                      // tela em paisagem
+                //alert('R-P');
+                im.classList.add('zoom-h');
+            }
+        }
+
+        setTimeout(function () {
+            overlay.innerHTML = '';
+            overlay.style.display = 'none';
+        }, 1500);
+
+
+    }
+
+    function closeLightbox() {
+        var lightbox = document.getElementById('lightbox');
+        var lightboxImage = document.getElementById('lightboxImage');
+        lightbox.style.opacity = '0';
+        lightbox.style.display = 'none';
+        lightboxImage.classList.remove('zoom-w');
+        lightboxImage.classList.remove('zoom-h');
+    }
+
+    (function () {
+        const slider = document.querySelector('.slider');
+        const slides = slider.querySelector('.slides');
+        const slideWidth = slides.querySelector('.slide').clientWidth; // Largura de cada slide
+        const slideCount = slides.childElementCount;
+        let currentIndex = 0;
+        let currentTranslate = 0;
+
+        var fim = false;
+
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % slideCount;
+            currentTranslate = currentTranslate + 342;
+            slides.style.transform = `translateX(-${(currentTranslate)}px)`;
+            if (currentIndex >= 11) {
+                if (fim == false) {
+                    fim = true;
+                }
+            } else if (currentIndex == 0) {
+                if (fim == true) {
+                    currentTranslate = 0;
+                    slides.style.transform = `translateX(0px)`;
+                    currentIndex = 0;
+                }
+            }
+        }
+
+        function prevSlide() {
+            if (currentIndex === 0) {
+            } else {
+                currentIndex = (currentIndex - 1 + slideCount) % slideCount;
+                currentTranslate = currentTranslate - 342;
+                slides.style.transform = `translateX(-${currentTranslate}px)`;
+            }
+        }
+
+        function loop() {
+            nextSlide();
+            setTimeout(loop, 5000);
+        }
+
+        // setTimeout(() => {
+        //     loop();
+        // }, 5000);
+
+        const nextButton = document.querySelector('#next');
+        const prevButton = document.querySelector('#prev');
+        nextButton.addEventListener('click', nextSlide);
+        prevButton.addEventListener('click', prevSlide);
+
+        const box = document.querySelector('#e_237864_1_27872 .e_caixa');
+        const gal = document.querySelector('.galeria');
+
+        box.appendChild(gal);
+        gal.style.display = 'flex'
+    })();
+</script>
+
+
+
 </html>
