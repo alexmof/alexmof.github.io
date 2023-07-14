@@ -1,0 +1,74 @@
+
+.box {
+    width: 80%;
+    min-width: 320px;
+}
+
+.nav-bar {
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-bar ul {
+    position: fixed;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    left: 100%;
+    top: 0px;
+    padding: 0px;
+    width: 50%;
+    height: 100%;
+    background-color: #008c8c;
+}
+
+.nav-bar ul li a {
+    color: #FFF;
+}
+
+#menu {
+    display: block;
+}
+
+#close {
+    display: none;
+}
+
+.perfil {
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+#selfie {
+    margin: 22px;
+}
+
+.name-contact {
+    flex-direction: column;
+    margin: 22px;
+    margin-top: 0px;
+}
+
+.contact p{
+    margin-top: 5px;
+}
+
+.hobbie h3 {
+    margin-left: 22px;
+}
+
+.hobbie p {
+    margin-left: 22px;
+    margin-right: 22px;
+}
+
+.reference {
+    margin-left: 5px;
+}
+
+.project {
+    box-sizing: border-box;
+}
+
