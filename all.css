@@ -21,6 +21,8 @@ body {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 43px;
+    padding: 25px;
+    box-sizing: content-box;
 }
 
 .nav-bar {
@@ -82,6 +84,7 @@ menu ul li a {
 
 .perfil {
     display: flex;
+    gap: 25px;
 }
 
 #selfie {
@@ -145,7 +148,6 @@ menu ul li a {
 
 .hobbies-box h2 {
     color: #4F4F4F;
-    padding: 25px;
     margin: 0px;
     align-self: flex-start;
 }
@@ -188,7 +190,6 @@ h3 {
 }
 
 .title {
-    margin-left: 22px;
     color: #333333;
 }
 

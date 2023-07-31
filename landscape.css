@@ -98,20 +98,16 @@ menu ul {
     flex-direction: row;
 }
 
-#selfie {
-    margin: 25px;
-}
-
 .name-contact {
     width: calc(95%);
     max-width: 820px;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 25px;
 }
 
 .resume {
     margin-left: 0px;
+    margin-right: 0px;
 }
 
 .about {
