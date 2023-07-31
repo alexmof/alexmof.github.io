@@ -579,6 +579,42 @@
     })();
 </script>
 
+<script>
+    document.addEventListener('scroll', rolar);
+    var animando = false;
+
+    function rolar() {
+        var atualPosicao = window.scrollY;
+        const $header = document.querySelector('.nav-bar');
+        const $logo = $header.querySelector('img');
+
+        var largura = window.innerWidth;
+
+        if (atualPosicao > 1 && animando == false && largura > 722) {
+            animando = true;
+            $header.classList.remove('revNav');
+            $header.classList.add('animNav');
+            $logo.classList.remove('revLogo');
+            $logo.classList.add('animLogo');
+            setTimeout(animando = false, 5000);
+        } else if (atualPosicao <= 1 && animando == false && largura > 722) {
+            animando = true;
+            $header.classList.remove('animNav');
+            $header.classList.add('revNav');
+            $logo.classList.remove('animLogo');
+            $logo.classList.add('revLogo');
+            setTimeout(animando = false, 5000);
+        }
+
+        
+        if ($logo.classList.contains('revLogo')) {
+            $logo.src = 'assets/Logo.png';
+        } else if ($logo.classList.contains('animLogo')) {
+            $logo.src = 'assets/Logo50.png';
+        }
+    }
+</script>
+
 
 
 </html>
