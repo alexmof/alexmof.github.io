@@ -58,6 +58,7 @@ li a:hover:after {
     width: 48px;
     fill: #4F4F4F;
     cursor: pointer;
+    z-index: 1;
 }
 
 #close {
