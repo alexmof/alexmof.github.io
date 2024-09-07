@@ -3,6 +3,10 @@
     min-width: 320px;
 }
 
+#sand-menu {
+    display: block;
+}
+
 .nav-bar {
     height: 60px;
     justify-content: center;
@@ -17,9 +21,9 @@
     position: fixed;
     flex-direction: column;
     justify-content: start;
-    align-items: left;
+    align-items: start;
     gap: 20px;
-    right: -50%;
+    right: -60%;
     top: 0px;
     padding: 70px 30px;
     width: 60%;
