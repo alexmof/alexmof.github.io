@@ -473,7 +473,11 @@ button svg {
     padding: 16px;
     font-size: 14px;
     line-height: 1.5;
-    color: #24292e;
+    color: #24292e;  
+    width: 100%;
+    margin-bottom: 18px;
+    margin-top: 18px;
+    box-sizing: border-box;
 }
 
 .float:hover {
